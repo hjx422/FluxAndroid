@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_above="@+id/rl_bottom"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFACD"
+        >
+        <TextView
+            android:id="@+id/tv_clear_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Clear Completed"
+            android:background="@drawable/btn_blue_selector"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_undo_deletion"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Undo"
+            android:gravity="center"
+            android:background="@drawable/btn_blue_selector"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>
